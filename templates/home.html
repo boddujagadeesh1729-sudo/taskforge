@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <section class="hero-section text-center">
+        <div class="mb-4">
+            <span class="badge bg-info fs-6 px-3 py-2">
+                Production Ready Backend System
+            </span>
+        </div>
+
+        <h1 class="display-1 fw-bold gradient-text">
+            TaskForge
+        </h1>
+
+        <p class="lead mt-4 mx-auto"
+           style="max-width: 850px;">
+            A modern Task Management REST API built with
+            Django REST Framework, JWT Authentication,
+            Celery, Redis, Docker, and Swagger.
+        </p>
+
+        <div class="mt-5 d-flex justify-content-center gap-3 flex-wrap">
+            <a href="/swagger/" class="btn btn-info btn-custom">
+                <i class="fa-solid fa-code"></i>
+                Swagger API Docs
+            </a>
+
+            <a href="/redoc/" class="btn btn-light btn-custom">
+                <i class="fa-solid fa-book"></i>
+                ReDoc
+            </a>
+
+            <a href="/api/tasks/" class="btn btn-outline-light btn-custom">
+                <i class="fa-solid fa-list-check"></i>
+                Task APIs
+            </a>
+        </div>
+    </section>
+
+    <section class="pb-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="glass-card text-center h-100">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <h3>JWT Authentication</h3>
+
+                    <p>
+                        Secure token-based authentication with protected API endpoints.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="glass-card text-center h-100">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+
+                    <h3>Task Management</h3>
+
+                    <p>
+                        Powerful CRUD APIs with filtering, search, and pagination.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="glass-card text-center h-100">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+
+                    <h3>Production Ready</h3>
+
+                    <p>
+                        Built using scalable Django REST Framework architecture.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">
+                Architecture
+            </h2>
+
+            <p class="text-light">
+                Built with production-grade backend tools.
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="glass-card text-center h-100">
+                    <h4>Django + DRF</h4>
+
+                    <p>
+                        Scalable REST API backend architecture.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="glass-card text-center h-100">
+                    <h4>JWT Auth</h4>
+
+                    <p>
+                        Secure authentication using JSON Web Tokens.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="glass-card text-center h-100">
+                    <h4>Celery + Redis</h4>
+
+                    <p>
+                        Background task processing and async workflows.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="glass-card text-center h-100">
+                    <h4>Dockerized</h4>
+
+                    <p>
+                        Portable production-ready containerized setup.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}
